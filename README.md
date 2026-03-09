@@ -10,7 +10,7 @@
 
 A modern and responsive product catalog web application that allows users to seamlessly browse and search for phones, tablets, and accessories. Built with a strong emphasis on high performance, scalable architecture, and a clean UI/UX.
 
-🔗 **Live Demo:** [Product Catalog Frontend](https://product-catalog-frontend.github.io/product-catalog-frontend/)
+🔗 **Live Demo:** [Product Catalog Frontend]((https://pupsao.github.io/product-catalog/))
 
 ---
 
