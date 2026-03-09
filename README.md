@@ -1,9 +1,56 @@
-# React TypeScript Starter Pack
+# 📱 Product Catalog – Phones, Tablets & Accessories
 
-To use this template click `Use this template`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-### Available Scripts
+📌 **About the Project**
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+A modern and responsive product catalog web application that allows users to seamlessly browse and search for phones, tablets, and accessories. Built with a strong emphasis on high performance, scalable architecture, and a clean UI/UX.
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+🔗 **Live Demo:** [Product Catalog Frontend](https://product-catalog-frontend.github.io/product-catalog-frontend/)
+
+---
+
+## 🎯 Project Overview
+
+This is a modern e-commerce application featuring:
+* **Comprehensive Product Catalog:** Browse phones, tablets, and accessories.
+* **Shopping Cart:** Add, remove, and manage items before checkout.
+* **Favorites List:** Save items for later.
+* **Detailed Views:** Dedicated product detail pages with full specifications.
+* **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+
+---
+
+## 🚀 Tech Stack
+
+### Frontend Core
+* **[React 19](https://react.dev/):** UI library
+* **[TypeScript](https://www.typescriptlang.org/):** Static type checking
+* **[Vite](https://vitejs.dev/):** Fast build tool and development server
+* **[React Router](https://reactrouter.com/):** Client-side routing
+* **[CSS Modules (SCSS)](https://sass-lang.com/):** Component-scoped, maintainable styling
+
+### Code Quality & Tooling
+* **ESLint:** Code linting (plugins for React, TypeScript, a11y, imports)
+* **Prettier:** Consistent code formatting
+* **Husky:** Git pre-commit hooks
+* **lint-staged:** Runs linters only on staged files
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+* **Node.js:** v20.x or higher
+* **npm:** Package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/product-catalog-frontend/product-catalog-frontend.git](https://github.com/product-catalog-frontend/product-catalog-frontend.git)
+   cd product-catalog-frontend
