@@ -48,9 +48,36 @@ This is a modern e-commerce application featuring:
 * **Node.js:** v20.x or higher
 * **npm:** Package manager
 
+### Product Model Example:
+
+TypeScript
+```bash
+interface Product {
+  id: string;        // Unique identifier
+  name: string;      // Full product name
+  image: string;     // Relative path to image
+  price: number;     // Current selling price
+  fullPrice: number; // Original price (used to calculate discount)
+  year: number;      // Release year (for "Newest" sorting)
+  capacity: string;  // Storage capacity (e.g., "64GB")
+  color: string;     // Device color (e.g., "Space Gray")
+}
+```
+
 ### Installation
 
 1. **Clone the repository**
    ```bash
    git clone [https://github.com/product-catalog-frontend/product-catalog-frontend.git](https://github.com/product-catalog-frontend/product-catalog-frontend.git)
    cd product-catalog-frontend
+
+2. Install dependencies
+
+Bash
+npm install
+Development
+Start the Vite development server:
+
+Bash
+npm run dev
+📍 The application will be available at http://localhost:5173
