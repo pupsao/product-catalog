@@ -73,11 +73,13 @@ interface Product {
 
 2. Install dependencies
 
-Bash
+```bash
 npm install
+```
 Development
-Start the Vite development server:
 
-Bash
+Start the Vite development server:
+```bash
 npm run dev
+```
 📍 The application will be available at http://localhost:5173
