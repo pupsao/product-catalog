@@ -1,0 +1,8 @@
+@use '../../assets/styles/utils/mixins' as *;
+@use '../../assets/styles/variables' as *;
+
+.banner__slider {
+  grid-area: slider;
+  overflow: hidden;
+  min-width: 0;
+}

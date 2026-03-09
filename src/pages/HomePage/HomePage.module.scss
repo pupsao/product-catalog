@@ -1,0 +1,34 @@
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.homeContainer {
+  margin: 0 32px;
+  @include tablet {
+    margin: 0 24px;
+  }
+  @include mobile {
+    margin: 16px;
+  }
+
+  .welcomeTitle {
+    margin: 56px 0;
+
+    @include tablet {
+      margin: 32px 0;
+    }
+
+    @include mobile {
+      margin: 24px 0;
+    }
+  }
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}

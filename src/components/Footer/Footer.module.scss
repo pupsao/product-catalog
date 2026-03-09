@@ -1,0 +1,120 @@
+@use '../common/typography/typography.scss' as *;
+@use '../../assets/styles/variables.scss' as *;
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.footer {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-xl 152px;
+}
+
+.logo img {
+  height: 28px;
+}
+
+.links {
+  display: flex;
+  gap: 106px;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.active {
+  color: var(--text-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+  }
+}
+
+.backToTop {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  span {
+    color: $secondary-color;
+  }
+}
+
+.topButton {
+  width: $spacing-xl;
+  height: $spacing-xl;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--slider-border-color);
+  background-color: var(--slider-bg);
+  color: var(--text-color);
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  svg {
+    width: $spacing-md;
+    height: $spacing-md;
+  }
+}
+
+@include tablet {
+  .container {
+    padding: $spacing-xl $spacing-xl;
+  }
+
+  .links {
+    gap: 14px;
+  }
+}
+
+@include mobile {
+  .container {
+    align-items: start;
+    flex-direction: column;
+    gap: $spacing-xl;
+    padding: $spacing-xl $spacing-md;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: start;
+    gap: $spacing-md;
+  }
+
+  .backToTop {
+    align-self: center;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+}

@@ -1,0 +1,36 @@
+@use '../../../../assets/styles/variables.scss' as var;
+
+.chevronButton {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var.$white;
+  border-radius: var.$border-radius-sm;
+  border: 1px solid var.$primary-color;
+
+  transition:
+    border 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+
+  &:hover:not(:disabled) {
+    border-width: 2px;
+  }
+
+  &:disabled {
+    border-color: var.$secondary-color;
+    color: var.$secondary-color;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}

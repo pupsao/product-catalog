@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "phones": "Phones",
+    "tablets": "Tablets",
+    "accessories": "Accessories"
+  },
+  "common": {
+    "back": "Back"
+  },
+  "favourites": {
+    "title": "Favourites",
+    "items": "items",
+    "empty": "Your favourites list is empty."
+  },
+  "footer": {
+    "about": "About",
+    "contacts": "Contacts",
+    "privacy": "Privacy",
+    "backToTop": "Back to top"
+  },
+  "home": {
+    "catalog": "Product Catalog",
+    "welcome": "Welcome to Nice Gadgets store!",
+    "brandNew": "Brand new models",
+    "hotPrices": "Hot prices",
+    "shopByCategory": "Shop by category"
+  },
+  "products": {
+    "all": "All",
+    "models": "models",
+    "sortBy": "Sort by",
+    "itemsOnPage": "Items on page",
+    "noProducts": "No products found in this category.",
+    "category": {
+      "phones": "Mobile phones",
+      "tablets": "Tablets",
+      "accessories": "Accessories"
+    }
+  },
+  "product": {
+    "screen": "Screen",
+    "capacity": "Capacity",
+    "ram": "RAM",
+    "addToCart": "Add to cart",
+    "addedToCart": "Added to cart"
+  },
+  "sort": {
+    "newest": "Newest",
+    "alphabetically": "Alphabetically",
+    "lowToHigh": "Low to High",
+    "highToLow": "High to Low"
+  },
+  "about": {
+    "title": "ABOUT",
+    "repo": "Project Repository on GitHub",
+    "team": "Our Team"
+  },
+  "contacts": {
+    "title": "TEAM CONTACTS",
+    "subtitle": "Get in touch with us for collaboration or any questions"
+  },
+  "notFound": {
+    "title": "Page not found"
+  },
+  "privacy": {
+    "title": "Privacy Policy & License",
+    "copyright": "Copyright & Intellectual Property",
+    "mit": "MIT License"
+  },
+  "productDetails": {
+    "loading": "Loading product details...",
+    "availableColors": "Available colors",
+    "selectCapacity": "Select capacity",
+    "about": "About",
+    "techSpecs": "Tech specs",
+    "notApplicable": "Not applicable",
+    "mayLike": "You may also like",
+    "specs": {
+      "resolution": "Resolution",
+      "processor": "Processor",
+      "builtInMemory": "Built in memory",
+      "camera": "Camera",
+      "zoom": "Zoom",
+      "cell": "Cell"
+    }
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "total": "Total for {{count}} item",
+    "total_plural": "Total for {{count}} items",
+    "checkout": "Checkout"
+  }
+}

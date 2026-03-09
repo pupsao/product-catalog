@@ -1,0 +1,12 @@
+@use '../../../assets/styles/variables.scss' as *;
+
+.switcher {
+  color: var(--text-color);
+  font-weight: $font-semibold;
+  transition: color 0.2s ease;
+  color: var(--text-color);
+
+  &:hover {
+    color: $secondary-color;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../../../../assets/styles/variables.scss' as *;
+@use '../../../../assets/styles/utils/mixins.scss' as *;
+
+.themeButton {
+  width: 64px;
+  height: 64px;
+  color: var(--text-color);
+  margin: auto;
+
+  .icon {
+    width: $spacing-md;
+    height: $spacing-md;
+  }
+}

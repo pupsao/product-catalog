@@ -1,0 +1,88 @@
+@use '../../assets/styles/variables.scss' as var;
+@use '../../assets/styles/utils/mixins.scss' as mix;
+
+.contacts {
+  padding: var.$spacing-xxl var.$spacing-lg;
+  color: var(--text-color);
+
+  h1 {
+    @include mix.text-style(32px, 40px, var.$font-bold, 1px, uppercase);
+    text-align: center;
+    margin-bottom: var.$spacing-xl;
+  }
+}
+
+.subtitle {
+  @include mix.text-style(16px, 24px, var.$font-regular);
+  color: var.$secondary-color;
+  text-align: center;
+  margin-bottom: var.$spacing-xxl;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var.$spacing-xl;
+
+  @include mix.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mix.mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid var.$elements-color;
+  border-radius: var.$border-radius-lg;
+  padding: var.$spacing-xl;
+  text-align: center;
+  transition: all var.$transition-default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    border-color: var.$yellow;
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    @include mix.text-style(18px, 24px, var.$font-semibold);
+    margin-top: var.$spacing-md;
+    margin-bottom: var.$spacing-lg;
+  }
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var.$spacing-md;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var.$spacing-sm;
+  color: var(--text-color);
+  transition: all var.$transition-default;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.linkedinIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

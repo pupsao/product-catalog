@@ -1,0 +1,98 @@
+@use '../../assets/styles/variables.scss' as *;
+@use '../../components/common/typography/typography.scss' as *;
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.card {
+  box-sizing: border-box;
+  padding: $spacing-xl;
+  border: 1px solid var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 272px;
+  min-height: 506px;
+  color: var(--primary-text-color);
+  transition: transform $transition-default;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  .imageLink {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: contain;
+    margin-bottom: $spacing-lg;
+  }
+
+  .titleLink {
+    margin-top: 0;
+    margin-bottom: $spacing-md;
+    align-self: flex-start;
+    min-height: 42px;
+  }
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-sm;
+}
+
+.realPrice {
+  margin: 0;
+}
+
+.price {
+  color: $secondary-color;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.options {
+  border-top: 1px solid var(--border-color, $elements-color);
+  padding-top: $spacing-sm;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.option {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  .label {
+    color: $secondary-color;
+  }
+
+  .value {
+    color: var(--primary-text-color);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  height: 40px;
+  margin-top: $spacing-lg;
+
+  .cartButton {
+    flex: 1;
+  }
+}

@@ -1,0 +1,180 @@
+@use '../../assets/styles/variables.scss' as *;
+$col: 32px;
+$gut: 16px;
+
+@function grid-width($n) {
+  @return ($n * $col) + (($n - 1) * $gut);
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.backButton {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.title {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.gallery {
+  display: flex;
+  gap: $gut;
+  width: grid-width(12) + $gut;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: grid-width(2);
+
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+}
+
+.mainImage {
+  width: grid-width(10);
+  border-radius: 8px;
+}
+
+.mainImageBox {
+  height: 464px;
+}
+
+.infoPanel {
+  margin-left: grid-width(1) + $gut;
+  width: grid-width(7);
+  flex-shrink: 0;
+}
+
+.optionTitle {
+  width: 50%;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.colorOptions,
+.capacityOptions {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+.colorCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.capacityButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.purchaseSection {
+  margin-top: 32px;
+}
+
+.priceBox {
+  width: 80px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-sm;
+  margin-bottom: 32px;
+}
+
+.addToCartButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.heartButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.specsShort {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.specLine {
+  width: 100%;
+  height: 16px;
+  display: block !important;
+}
+
+.itemId {
+  width: grid-width(4);
+  height: 16px;
+  margin-left: $gut;
+  padding-top: $spacing-xs;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 80px;
+}
+
+.sectionTitle {
+  width: 30%;
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.descriptionItem {
+  margin-bottom: 32px;
+
+  .descriptionTitle {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .descriptionText {
+    width: 100%;
+    height: 16px;
+  }
+}
+
+.techSpecsBlock {
+  margin-left: grid-width(1) + $gut;
+  width: grid-width(11);
+
+  .techSpecLine {
+    width: 80%;
+    height: 16px;
+  }
+}
+
+.hotPricesCarousel {
+  width: 100%;
+  height: 200px;
+  margin-top: 32px;
+}

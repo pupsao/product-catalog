@@ -1,0 +1,38 @@
+@use '../../assets/styles/variables.scss' as *;
+@use '../../components/common/typography/typography.scss' as *;
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include text-style(12px, 12px, 600, 0);
+
+  .home {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .current {
+    color: $secondary-color;
+    pointer-events: none;
+  }
+
+  .separator {
+    color: $secondary-color;
+    margin: 0 $spacing-sm;
+  }
+}

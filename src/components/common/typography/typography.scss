@@ -1,0 +1,63 @@
+@use '../../../assets/styles/utils/mixins.scss' as *;
+
+@font-face {
+  font-family: 'Mont-Regular';
+  src: url('../../../assets/fonts/Mont-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont-SemiBold';
+  src: url('../../../assets/fonts/Mont-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont-Bold';
+  src: url('../../../assets/fonts/Mont-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  @include text-style(48px, 56px, 700, -0.01em);
+  @include mobile {
+    @include text-style(32px, 41px, 700, -0.01em);
+  }
+}
+h2 {
+  @include text-style(32px, 41px, 700, -0.01em);
+  @include mobile {
+    @include text-style(22px, 31px, 700, 0);
+  }
+}
+h3 {
+  @include text-style(22px, 31px, 700, 0);
+  @include mobile {
+    @include text-style(20px, 26px, 600, 0);
+  }
+}
+h4 {
+  @include text-style(20px, 26px, 600, 0);
+  @include mobile {
+    @include text-style(16px, 20px, 600, 0);
+  }
+}
+
+.uppercase {
+  @include text-style(12px, 11px, 700, 0.04em, uppercase);
+}
+
+.button-text {
+  @include text-style(14px, 21px, 600, 0);
+}
+
+.body-text {
+  @include text-style(14px, 21px, 400, 0);
+}
+
+.small-text {
+  @include text-style(12px, 15px, 600, 0);
+}

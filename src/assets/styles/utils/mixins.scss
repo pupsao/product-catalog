@@ -1,0 +1,34 @@
+@use '../variables.scss' as var;
+
+@mixin text-style(
+  $font-size,
+  $line-height,
+  $font-weight: 400,
+  $letter-spacing: 0,
+  $transform: none
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  text-transform: $transform;
+
+  @if $font-weight == 700 {
+    font-family: 'Mont-Bold', sans-serif;
+  } @else if $font-weight == 600 {
+    font-family: 'Mont-SemiBold', sans-serif;
+  } @else {
+    font-family: 'Mont-Regular', sans-serif;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: var.$tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: var.$mobile) {
+    @content;
+  }
+}

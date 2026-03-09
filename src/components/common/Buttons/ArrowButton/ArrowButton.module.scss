@@ -1,0 +1,30 @@
+@use '../../../../assets/styles/variables.scss' as var;
+@use '../../../../assets/styles/utils/mixins.scss' as *;
+
+.arrowButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var.$spacing-xs;
+
+  @include text-style(12px, 12px, 600, 0);
+
+  color: var.$secondary-color;
+  transition: color 0.2s;
+
+  &:hover:not(:disabled) {
+    color: var.$primary-color;
+  }
+
+  &:disabled {
+    color: var.$secondary-color;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: currentColor;
+}

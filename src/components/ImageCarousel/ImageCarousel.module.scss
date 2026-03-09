@@ -1,0 +1,93 @@
+@use '../../assets/styles/utils/mixins' as *;
+@use '../../assets/styles/variables' as *;
+
+.banner {
+  display: grid;
+  grid-template-columns: 32px 1fr 32px;
+  grid-template-areas:
+    'prev slider next'
+    '.    dots   .   ';
+  column-gap: 16px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    margin: 0 -16px;
+    grid-template-areas:
+      'slider'
+      'dots';
+  }
+
+  .js-prev,
+  .js-next {
+    width: 32px;
+    box-sizing: border-box;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid var(--slider-border-color);
+    cursor: pointer;
+    background-color: var(--slider-bg);
+    color: var(--text-color);
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .js-prev {
+    grid-area: prev;
+  }
+  .js-next {
+    grid-area: next;
+  }
+
+  &__slider {
+    grid-area: slider;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    min-width: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+
+    @include tablet {
+      height: 190px;
+    }
+    @include mobile {
+      height: 320px;
+    }
+  }
+
+  &__pagination {
+    grid-area: dots;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+
+    @include mobile {
+      gap: 6px;
+    }
+
+    :global(.swiper-pagination-bullet) {
+      width: 16px;
+      height: 4px;
+      border-radius: 0;
+      background: var(--pagination-bg);
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      background: var(--pagination-active-bg);
+      width: 28px;
+    }
+  }
+}

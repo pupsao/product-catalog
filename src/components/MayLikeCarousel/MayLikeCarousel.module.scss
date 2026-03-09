@@ -1,0 +1,49 @@
+@use '../../assets/styles/utils/mixins' as *;
+@use '../../assets/styles/variables' as *;
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 32px 32px;
+  grid-template-rows: 32px 1fr;
+  grid-template-areas:
+    'h2 prev next'
+    'slider slider slider';
+  column-gap: 16px;
+  row-gap: 24px;
+  margin: 80px 0;
+
+  @include tablet {
+    margin: 64px 0;
+  }
+  @include mobile {
+    margin: 56px 0;
+  }
+
+  h2 {
+    grid-area: h2;
+    margin: 0;
+    color: var(--text-color);
+  }
+
+  .js-prev,
+  .js-next {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--slider-border-color);
+    cursor: pointer;
+    background-color: var(--slider-bg);
+    color: var(--text-color);
+  }
+
+  .js-prev {
+    grid-area: prev;
+    justify-self: end;
+  }
+  .js-next {
+    grid-area: next;
+    justify-self: end;
+  }
+}

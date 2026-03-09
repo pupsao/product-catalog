@@ -1,0 +1,73 @@
+@use '../../assets/styles/variables.scss' as *;
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.categor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  @include tablet {
+    margin-top: 64px;
+  }
+  @include mobile {
+    margin-top: 56px;
+  }
+}
+
+.categories {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 0 16px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 32px 0;
+  }
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+
+  h3 {
+    margin-top: 24px;
+  }
+
+  p {
+    margin-top: 4px;
+  }
+
+  .categoryLink {
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    @include tablet {
+      aspect-ratio: 1/1;
+    }
+    @include mobile {
+      aspect-ratio: 1/1;
+    }
+  }
+}
+
+.categoryImage {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  transform: translate(30%, 30%);
+}
+
+.category:nth-child(1) .categoryLink {
+  background-color: $phone-category-bg;
+}
+
+.category:nth-child(2) .categoryLink {
+  background-color: $tablet-category-bg;
+}
+
+.category:nth-child(3) .categoryLink {
+  background-color: $accessories-category-bg;
+}

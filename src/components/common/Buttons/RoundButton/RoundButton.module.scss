@@ -1,0 +1,37 @@
+@use '../../../../assets/styles/variables.scss' as var;
+
+.roundButton {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  //background-color: #f7e5d1;
+  border: 1px solid var.$secondary-color;
+
+  transition:
+    border 0.2s,
+    background 0.2s,
+    opacity 0.2s;
+
+  &:hover:not(:disabled):not(.selected) {
+    border-width: 2px;
+    border-color: var.$secondary-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.selected {
+  border: 2px solid var.$primary-color;
+
+  &:hover {
+    border-color: var.$primary-color;
+  }
+}

@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@use './assets/styles/variables.scss' as *;
+
+:root {
+  --main-bg: #{$white};
+  --text-color: #{$icons-color};
+  --secondary-color: #{$secondary-color};
+  --primary-color: #{$primary-color};
+  --border-color: #{$elements-color};
+  --button-bg: #{$icons-color};
+  --slider-border-color: #{$slider-border-color};
+  --slider-bg: #{$white};
+  --pagination-bg: #{$elements-color};
+  --pagination-active-bg: #{$primary-color};
+  --buy-button-bg: #{$primary-color};
+  --hover-bg: #{$hover-bg};
+  --card-button-bg: #{$white};
+  --card-button-color: #{$success-color};
+  --card-button-border: #{$elements-color};
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root[data-theme='dark'] {
+  --main-bg: #{$theme-dark-bg};
+  --text-color: #{$theme-dark-color};
+  --text-active: #{$text-active-bg};
+  --secondary-color: #{$theme-dark-secondary-color};
+  --primary-color: #{$theme-dark-color};
+  --border-color: #{$theme-dark-border};
+  --button-bg: #{$theme-dark-border};
+  --slider-border-color: #{$theme-dark-border};
+  --slider-bg: #{$theme-dark-border};
+  --pagination-bg: #{$theme-dark-pagination};
+  --pagination-active-bg: #{$theme-dark-color};
+  --buy-button-bg: #{$theme-dark-button};
+  --hover-bg: #{$theme-dark-hover-bg};
+  --card-button-bg: #{$theme-dark-border};
+  --card-button-color: #{$theme-dark-color};
+  --card-button-border: #{$theme-dark-border};
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
 }

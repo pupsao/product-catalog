@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Головна",
+    "phones": "Телефони",
+    "tablets": "Планшети",
+    "accessories": "Аксесуари"
+  },
+  "common": {
+    "back": "Назад"
+  },
+  "favourites": {
+    "title": "Обране",
+    "items": "товарів",
+    "empty": "Ваш список обраного порожній."
+  },
+  "footer": {
+    "about": "Про нас",
+    "contacts": "Контакти",
+    "privacy": "Конфіденційність",
+    "backToTop": "Вгору"
+  },
+  "home": {
+    "catalog": "Каталог продуктів",
+    "welcome": "Ласкаво просимо до Nice Gadgets!",
+    "brandNew": "Нові моделі",
+    "hotPrices": "Гарячі ціни",
+    "shopByCategory": "Категорії товарів"
+  },
+  "products": {
+    "all": "Всі",
+    "models": "моделей",
+    "sortBy": "Сортувати",
+    "itemsOnPage": "На сторінці",
+    "noProducts": "Товари не знайдено.",
+    "category": {
+      "phones": "Мобільні телефони",
+      "tablets": "Планшети",
+      "accessories": "Аксесуари"
+    }
+  },
+  "product": {
+    "screen": "Екран",
+    "capacity": "Місткість",
+    "ram": "ОЗП",
+    "addToCart": "Купити",
+    "addedToCart": "В кошику"
+  },
+  "sort": {
+    "newest": "Найновіші",
+    "alphabetically": "За алфавітом",
+    "lowToHigh": "Від дешевих",
+    "highToLow": "Від дорогих"
+  },
+  "about": {
+    "title": "ПРО НАС",
+    "repo": "Репозиторій проєкту",
+    "team": "Наша команда"
+  },
+  "contacts": {
+    "title": "КОНТАКТИ КОМАНДИ",
+    "subtitle": "Зв'яжіться з нами для співпраці або будь-яких питань"
+  },
+  "notFound": {
+    "title": "Сторінку не знайдено"
+  },
+  "privacy": {
+    "title": "Політика конфіденційності та ліцензія",
+    "copyright": "Авторські права та інтелектуальна власність",
+    "mit": "Ліцензія MIT"
+  },
+  "productDetails": {
+    "loading": "Завантаження деталей продукту...",
+    "availableColors": "Доступні кольори",
+    "selectCapacity": "Оберіть обсяг памʼяті",
+    "about": "Про товар",
+    "techSpecs": "Технічні характеристики",
+    "notApplicable": "Не застосовується",
+    "mayLike": "Вам також сподобається",
+    "specs": {
+      "resolution": "Роздільна здатність",
+      "processor": "Процесор",
+      "builtInMemory": "Вбудована памʼять",
+      "camera": "Камера",
+      "zoom": "Зум",
+      "cell": "Мережі"
+    }
+  },
+  "cart": {
+    "title": "Кошик",
+    "empty": "Ваш кошик порожній",
+    "total": "Разом за {{count}} товар",
+    "total_plural": "Разом за {{count}} товари",
+    "checkout": "Оформити замовлення"
+  }
+}

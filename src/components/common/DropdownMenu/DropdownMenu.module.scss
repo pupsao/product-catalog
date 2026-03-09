@@ -1,0 +1,140 @@
+@use '../../../assets/styles/variables.scss' as *;
+
+/* Trigger */
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-sm;
+  padding: $spacing-sm $spacing-md;
+  min-width: 176px;
+  border: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+  color: var(--primary-text-color);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color $transition-default;
+}
+
+.dropdownTrigger:hover {
+  border-color: $primary-color;
+}
+
+.dropdownContent {
+  z-index: 50;
+  min-width: 8rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: $border-radius-md;
+  border: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+  padding: $spacing-xs;
+  box-shadow: 0 6px 18px rgba($icons-color, 0.12);
+  position: relative;
+}
+
+/* Item */
+.dropdownItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-xs $spacing-sm;
+  padding-left: 1.75rem;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--primary-text-color);
+  transition: background-color $transition-default;
+}
+
+.dropdownItem:hover,
+.dropdownItem:focus {
+  background-color: var(--hover-bg);
+}
+
+/* SubTrigger */
+.dropdownSubtrigger {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-xs $spacing-sm;
+  padding-left: 1.75rem;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.875rem;
+  color: var(--primary-text-color);
+  border-radius: $border-radius-sm;
+  transition: background-color $transition-default;
+}
+
+.dropdownSubtrigger:hover,
+.dropdownSubtrigger:focus {
+  background-color: var(--hover-bg);
+}
+
+/* SubContent */
+.dropdownSubcontent {
+  z-index: 50;
+  min-width: 8rem;
+  border-radius: $border-radius-md;
+  border: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+  padding: $spacing-xs;
+  box-shadow: 0 6px 18px rgba($icons-color, 0.12);
+}
+
+/* Label */
+.dropdownLabel {
+  padding: $spacing-xs $spacing-sm;
+  font-size: 0.875rem;
+  font-weight: $font-semibold;
+  color: $secondary-color;
+}
+
+/* Separator */
+.dropdownSeparator {
+  height: 1px;
+  margin: $spacing-xs 0;
+  background-color: $elements-color;
+}
+
+/* Checkbox / Radio Indicator */
+.dropdownIndicator {
+  position: absolute;
+  left: 0.5rem;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+
+/* Icons */
+.dropdownChevron {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+  color: $secondary-color;
+}
+
+.dropdownIconSm {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdownIconXs {
+  width: 8px;
+  height: 8px;
+  fill: currentColor;
+}
+
+/* Shortcut text */
+.dropdownShortcut {
+  margin-left: auto;
+  font-size: 12px;
+  opacity: 0.6;
+  color: $secondary-color;
+}

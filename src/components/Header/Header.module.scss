@@ -1,0 +1,182 @@
+@use '../../assets/styles/variables.scss' as *;
+@use '../../components/common/typography/typography.scss' as *;
+@use '../../assets/styles/utils/mixins.scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: $spacing-big;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+
+.logoContainer {
+  margin-right: $spacing-lg;
+  margin-left: $spacing-lg;
+}
+
+.nav {
+  display: flex;
+  gap: $spacing-big;
+  margin-right: $spacing-lg;
+  margin-left: $spacing-lg;
+  flex-grow: 1;
+}
+
+.navLink {
+  position: relative;
+  text-decoration: none;
+  color: var(--secondary-color);
+
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.active {
+  color: var(--primary-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.iconButton {
+  width: $spacing-big;
+  height: $spacing-big;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  border: none;
+  border-left: 1px solid var(--border-color);
+  text-decoration: none;
+  position: relative;
+
+  svg {
+    width: $spacing-md;
+    height: $spacing-md;
+  }
+}
+
+.activeIcon {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+
+  min-width: 14px;
+  height: 14px;
+  padding: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $error-color;
+  color: $white;
+  border: 1px solid $white;
+
+  font-size: 9px;
+  font-weight: $font-semibold;
+  border-radius: 50%;
+}
+
+@include tablet {
+  .header {
+    height: $spacing-xxl;
+  }
+
+  .logoContainer {
+    margin-right: $spacing-md;
+    margin-left: $spacing-md;
+  }
+
+  .logoContainer img {
+    height: 22px;
+  }
+
+  .nav {
+    gap: $spacing-xl;
+    margin-right: $spacing-md;
+    margin-left: $spacing-md;
+  }
+
+  .iconButton {
+    width: $spacing-xxl;
+    height: $spacing-xxl;
+
+    svg {
+      width: $spacing-md;
+      height: $spacing-md;
+    }
+  }
+
+  .active::after {
+    bottom: -18px;
+  }
+
+  .badge {
+    top: 9px;
+    right: 9px;
+  }
+}
+
+.burger {
+  display: none;
+  width: $spacing-xxl;
+  height: $spacing-xxl;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: var(--text-color);
+  border-left: 1px solid var(--border-color);
+  background: var(--main-bg);
+}
+
+@include mobile {
+  .nav {
+    display: none;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .logoContainer {
+    flex-grow: 1;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
