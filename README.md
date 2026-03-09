@@ -76,9 +76,7 @@ interface Product {
 ```bash
 npm install
 ```
-Development
-
-Start the Vite development server:
+Start the development server:
 ```bash
 npm run dev
 ```
